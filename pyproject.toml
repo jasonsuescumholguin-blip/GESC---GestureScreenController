@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "screen-controller"
+version = "0.1.0"
+description = "Webcam-based 2D air mouse controller for Windows."
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+dependencies = [
+  "opencv-contrib-python>=4.9",
+  "mediapipe>=0.10",
+  "PySide6>=6.6",
+  "pynput>=1.7",
+  "screeninfo>=0.8"
+]
+
+[project.scripts]
+screen-controller = "screen_controller.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,19 @@
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+checkpoints/
+.pytest_cache/
+.test-tmp/
+.idea/
+.vscode/
+*.log
+# Local calibration and downloaded models
+config.json
+models/*.task
+models/*.tmp
+.env
+.env.*
